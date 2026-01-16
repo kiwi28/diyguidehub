@@ -1,8 +1,13 @@
 (function () {
-	var KEY = "gdpr_consent"; // value: 'accepted' or 'rejected'
+	console.log("gdpr runing");
+	var KEY = "gdpr_consent-dghub"; // value: 'accepted' or 'rejected'
 	var banner = document.getElementById("gdpr-banner");
 	var acceptBtn = document.getElementById("gdpr-accept");
 	var rejectBtn = document.getElementById("gdpr-reject");
+
+	console.log("banner", banner);
+	console.log("acceptBtn", acceptBtn);
+	console.log("rejectBtn", rejectBtn);
 
 	function showBanner() {
 		if (banner) {
@@ -43,6 +48,7 @@
 
 	// Initialization
 	var current = getConsent();
+	console.log("current", current);
 	if (current === "accepted") {
 		runNonEssential();
 	}
@@ -52,10 +58,10 @@
 		hideBanner();
 	}
 
-	acceptBtn.addEventListener("click", function () {
+	acceptBtn?.addEventListener("click", function () {
 		setConsent("accepted");
 	});
-	rejectBtn.addEventListener("click", function () {
+	rejectBtn?.addEventListener("click", function () {
 		setConsent("rejected");
 	});
 
