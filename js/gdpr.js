@@ -10,11 +10,13 @@
 	console.log("rejectBtn", rejectBtn);
 
 	function showBanner() {
+		console.log("show banner", banner);
 		if (banner) {
 			banner.style.display = "block";
 		}
 	}
 	function hideBanner() {
+		console.log("hide banner", banner);
 		if (banner) {
 			banner.style.display = "none";
 		}
