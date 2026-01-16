@@ -1979,3 +1979,22 @@ section {
 .skip-link:focus {
 	top: 0;
 }
+
+
+/* gdpr */
+#gdpr-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20,20,20,0.95);
+  color: #fff;
+  padding: 16px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+.gdpr-inner { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.gdpr-inner p { margin:0; font-size:14px; }
+.gdpr-actions button { margin-left:8px; padding:8px 12px; border:0; border-radius:4px; cursor:pointer; }
+#gdpr-accept { background:#2ecc71; color:#fff; }
+#gdpr-reject { background:#e74c3c; color:#fff; }

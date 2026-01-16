@@ -113,8 +113,38 @@
 				}
 			}
 		</script>
+		<script src="/js/gdpr.js"></script>
+		<script
+			defer
+			src="https://ablnnwhcatxfqltiscfe.supabase.co/functions/v1/track"
+			data-id="a44100e1-4547-47b6-b819-a2d14df5cca6"
+		></script>
 	</head>
 	<body>
+		<!-- GDPR Consent Banner -->
+		<div
+			id="gdpr-banner"
+			aria-live="polite"
+			style="display: none"
+		>
+			<div class="gdpr-inner">
+				<p>
+					We use cookies to improve your experience and to process payments via
+					Stripe. Non-essential cookies (analytics/ads) will only be used with
+					your consent. Read our
+					<a
+						href="/privacy.html"
+						target="_blank"
+						rel="noopener"
+						>Privacy Policy</a
+					>.
+				</p>
+				<div class="gdpr-actions">
+					<button id="gdpr-reject">Reject</button>
+					<button id="gdpr-accept">Accept</button>
+				</div>
+			</div>
+		</div>
 		<!-- Header -->
 		<header class="header">
 			<div class="container">
